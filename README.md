@@ -43,25 +43,17 @@ home page
 
 ![list create](https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-HyejunShin/blob/master/documentation/Untitled%20presentation%20(1).png)
 
-<br />
-
 login page
 
 ![list create](https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-HyejunShin/blob/master/documentation/Untitled%20presentation%20(2).png)
-
-<br />
 
 signup page
 
 ![list create](https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-HyejunShin/blob/master/documentation/Untitled%20presentation%20(3).png)
 
-<br />
-
 item detail page
 
 ![list create](https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-HyejunShin/blob/master/documentation/Untitled%20presentation%20(8).png)
-
-<br />
 
 chat page
 
