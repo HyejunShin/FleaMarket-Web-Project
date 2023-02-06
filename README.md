@@ -10,20 +10,29 @@ home page
 
 ![list create](https://github.com/HyejunShin/FleaMarket-Web-Project/blob/main/documentation/home.png)
 
+
+
 signup
 
 ![list create](https://github.com/HyejunShin/FleaMarket-Web-Project/blob/main/documentation/signup.png)
+
+
 
 item detail page
 
 ![list create](https://github.com/HyejunShin/FleaMarket-Web-Project/blob/main/documentation/item-detail.png)
 
+
+
 add item page
 ![list create](https://github.com/HyejunShin/FleaMarket-Web-Project/blob/main/documentation/add-item.png)
+
+
 
 chat page
 
 ![list create](https://github.com/HyejunShin/FleaMarket-Web-Project/blob/main/documentation/chat.png)
+
 
 
 ## Wireframes
@@ -34,17 +43,25 @@ home page
 
 ![list create](https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-HyejunShin/blob/master/documentation/Untitled%20presentation%20(1).png)
 
+
+
 login page
 
 ![list create](https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-HyejunShin/blob/master/documentation/Untitled%20presentation%20(2).png)
+
+
 
 signup page
 
 ![list create](https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-HyejunShin/blob/master/documentation/Untitled%20presentation%20(3).png)
 
+
+
 item detail page
 
 ![list create](https://github.com/nyu-csci-ua-0467-001-002-fall-2022/final-project-HyejunShin/blob/master/documentation/Untitled%20presentation%20(8).png)
+
+
 
 chat page
 
