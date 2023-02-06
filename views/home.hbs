@@ -1,0 +1,23 @@
+<div class="container" style="overflow: hidden;">
+    <div class="row" style="margin:0px center;">
+    {{#each items as |item|}}
+    <div class="col-auto mt-3 ml-3 mb-3">
+    <div class="card" style="width: 220px; height: 280px;">
+        <div>
+            {{#if image}}
+            <img src="data:{{image.contentType}};base64, {{buffer image.data}}" style="object-fit: cover; width: 100%; height: 210px;">
+            {{else}}
+            <img src="/img-placeholder.jpg" style="object-fit: cover; width: 100%; height: 210px;">
+            {{/if}}
+        </div>
+        <div>
+            <p class="font-weight-light" style="margin-bottom: 0; padding-left: 10px; padding-top: 5px; max-width: 95%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{title}}</p>
+            <p class="font-weight-normal" style="margin: 0; padding-top: 5px; padding-left: 10px; padding-bottom: 10px;">$<b>{{price}}</b></p>
+        </div>
+        <a href="/items/{{slug}}" class="stretched-link"></a>
+    </div>
+    </div>
+    {{/each}}
+    </div>
+</div>
+    

@@ -1,0 +1,45 @@
+<h2 id="room-name" chat-id="{{chat._id}}" user-id="{{sesUser._id}}">Chat page</h2>
+<script defer type="module" src="/js/chat.js"></script>
+<div id="chat-content">
+    <div id="chat-rooms-sidebar">
+        {{#each infos as |info|}}
+        <div class="room-sidebar">
+            <a href={{info.url}}>
+            <p style="margin: 0; padding-top: 10px; text-align: left; padding-left: 15px;">Item: {{info.title}}</p>
+            <p style="margin: 0; padding-bottom: 10px; text-align: left; padding-left: 15px;">User: {{info.username}}</p>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+    <div id="chat-room">
+        <div id="chat-messages">
+            {{#if chat._id}}
+            {{#each chat.messages as |msg|}}
+            {{#ifCond ../sesUser._id msg.user}}
+            <div class="message-box self-sent" align="left">
+                <div class="message-time">{{dateFormat msg.createdAt "h:mm a"}}</div>
+                <p class="message-text self-text">{{msg.message}}</p>
+                <!--<p>{{../sesUser._id}} is equal to {{msg.user}}</p>-->
+            </div>
+            {{else}}
+            <div class="message-box others-sent" align="left">
+                <div class="message-time">{{dateFormat createdAt "h:mm a"}}</div>
+                <p class="message-text others-text">{{message}}</p>
+                <!--<p>{{../sesUser._id}} is not equal to {{msg.user}}</p>-->
+            </div>
+            {{/ifCond}}
+            {{/each}}
+            {{else}}
+            <p style="padding-top: 40px; font-size: 40px;">Select chat</p>
+            {{/if}}
+        </div>
+        <div id="chat-form">
+            {{#if chat._id}}
+            <form method="POST" action="">
+                <input type="text" id="message-text" value="" placeholder="Enter text.." style="width: 85%; border:0;">
+                <input type="submit" value="Send" id="submit-btn" style="width: 10%;">
+            </form>
+            {{/if}}
+        </div>
+    </div>
+</div>

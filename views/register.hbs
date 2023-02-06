@@ -1,0 +1,34 @@
+<h2>Register</h2>
+<script defer type="module" src="/js/validate-reg.js"></script>
+<div id="content">
+{{#if message}}
+<div class="error">{{ message }}</div>
+{{/if}}
+<form method="POST" action="register">
+    <div class="form-group row">
+        <label for="username" class="col-sm-1 col-form-label">Username</label>
+        <div class="col-sm-5">
+            <input type="text" name="username" class="form-control" placeholder="Username">
+            <div id="usernameMsg" class="validation"></div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="username" class="col-sm-1 col-form-label">Email</label>
+        <div class="col-sm-5">
+            <input type="email" name="email" class="form-control" placeholder="Email">
+            <div id="emailMsg" class="validation"></div>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="password" class="col-sm-1 col-form-label">Password</label>
+        <div class="col-sm-5">
+            <input type="password" name="password" class="form-control" placeholder="Password">
+            <div id="passwordMsg" class="validation"></div>
+        </div>
+        </div>
+    </div>
+	<div>
+		<input type="submit" class="btn btn-success btn-lg col-sm-1" value="Register">
+	</div>
+</form>
+</div>

@@ -1,0 +1,36 @@
+<script type="module">
+    import { openChat, needLogin } from '/js/open-chat.js';
+    {{#if sesUser}}
+    openChat("{{sesUser._id}}", "{{item.user._id}}", "{{item._id}}");
+    {{else}}
+    needLogin();
+    {{/if}}
+</script>
+<br>
+<div style="display: table;">
+    <div style="display: table-row">
+        {{#if item.image}}
+        <img src="data:{{item.image.contentType}};base64, {{buffer item.image.data}}" style="width: 400px; height: 400px; display: table-cell; border-width: thin; border-style: ridge; object-fit: cover;">
+        {{else}}
+        <img src="/img-placeholder.jpg" style="width: 400px; height: 400px; display: table-cell; border-width: thin; border-style: ridge; object-fit: cover;">
+        {{/if}}
+        <div style="padding-left: 40px; display: table-cell; vertical-align: top; position: relative;">
+            <h2 style="">{{item.title}}</h2>
+            <br>
+            <h3 style="">${{item.price}}</h3>
+            <br>
+            <div>User id: {{item.user}}</div>
+            <br>
+            <div style="">{{item.state}}</div>
+            <div style="">Category: {{item.category}}</div>
+            <div style="position: absolute; bottom: 0px;"><button id="start-chat" class="btn btn-lg btn-success" style="width: 200px;">Chat</button></div>
+        </div>
+    </div>
+    <br>
+</div>
+<hr>
+<div style="width: 80%;">
+    <h3>Description</h3>
+    <br>
+    <span style="white-space: pre-wrap;">{{item.description}}</span>
+</div>
