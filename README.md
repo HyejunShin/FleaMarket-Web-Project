@@ -1,8 +1,6 @@
-# Flea Market
+# Flea Market (Project for CSCI-UA 467 Applied Internet Technology Fall 2022)
 
 ## Overview
-
-Project for CSCI-UA 467 Applied Internet Technology class I did on Fall 2022:
 
 Flea Market is a web-platform used for buying and selling used or unneeded items. Users can search for and view lists of items. They can also select a specific category of item (e.g. furniture, clothing, books) they want to look for. To upload or buy an item, users need to register and login. When uploading an item, users need to include images, price, category, and description of the item. When buying an item, users can use the chat feature to chat with the seller.
 
