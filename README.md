@@ -10,7 +10,7 @@ Flea Market is a web-platform used for buying and selling used or unneeded items
 
 home page
 
-![list create](https://github.com/HyejunShin/FleaMarket-Web-Project/blob/main/documentation/home.png | width = 200px)
+![list create](https://github.com/HyejunShin/FleaMarket-Web-Project/blob/main/documentation/home.png)
 
 signup
 
