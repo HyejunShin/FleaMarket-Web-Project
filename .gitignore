@@ -1,0 +1,7 @@
+node_modules
+.DS_Store
+*.swo
+*.swp
+config.json
+uploads/*
+!uploads/.gitkeep 
